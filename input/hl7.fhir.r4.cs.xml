@@ -14,12 +14,6 @@
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
-      <code value="CS"/>
-    </coding>
-  </jurisdiction>
-  <jurisdiction>
-    <coding>
-      <system value="urn:iso:std:iso:3166"/>
       <code value="CZ"/>
     </coding>
   </jurisdiction>
