@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Start by finding all references to "myig" and updating to appropriate text for your IG, including changing realm -->
+<ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R4/fhir-single.xsd">
+  <id value="hl7.fhir.r4.cs"/>
+  <url value="http://hl7.org/fhir/langs/ImplementationGuide/hl7.fhir.r4.cs"/>
+  <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
+  <version value="0.1.0"/>
+  <name value="FHIRLangPackCzech"/>
+  <title value="Language pack FHIR - Czech"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7 International Affiliate Council"/>
+  <description value="Language pack FHIR - Czech"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CS"/>
+    </coding>
+  </jurisdiction>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CZ"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="hl7.fhir.r4.cs"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn>
+    <uri value="http://hl7.org/fhir"/>
+    <packageId value="hl7.fhir.r4.examples"/>
+    <version value="4.0.1"/>
+  </dependsOn>
+  <definition>
+    <page>
+      <nameUrl value="index.html"/>
+      <title value="Úvodní stránka"/>
+      <generation value="html"/>
+    </page>
+    <!-- copyright year is a mandatory parameter -->
+    <parameter>
+      <code value="copyrightyear"/>
+      <value value="2023+"/>
+    </parameter>
+    <!-- releaselabel should be the ballot status for HL7-published IGs. -->
+    <parameter>
+      <code value="releaselabel"/>
+      <value value="Working Copy"/>
+    </parameter>
+    <!-- The actual default working language -->
+    <parameter>
+      <code value="i18n-default-lang"/>
+      <value value="cs"/>
+    </parameter>
+    <!-- folder to scan for translations to turn into supplements -->
+    <parameter>
+      <code value="translation-supplements"/>
+      <value value="input/translations"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>
